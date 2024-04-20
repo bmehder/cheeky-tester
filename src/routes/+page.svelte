@@ -5,7 +5,7 @@
 </script>
 
 <section class="section">
-	{#each data.jobsByRegions as region}
+	{#each data.jobsByRegions || [] as region}
 		<div class="flow">
 			<h3>{region.state}</h3>
 			<div class="fixed-grid">
