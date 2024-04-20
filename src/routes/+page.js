@@ -4,11 +4,9 @@ export const ssr = false
 
 export async function load({ fetch }) {
 	const route = 'https://cheekycms.com/wp-json/cheeky/v1/jobs'
-	// const params = '?arrange=regions&arrangeby=states'
 	const params = '?group=regions&groupby=countries'
 
 	const response = await fetch(route + params)
-	console.log(response)
 
 	if (!response.ok) {
 		error(404, {
