@@ -4,7 +4,13 @@
 
 <div>
 	<h3>{job.title}</h3>
-	<p>{job.city}</p>
+	<p>
+		{#if job.state_abbrev}
+			{job.city + ', ' + job.state_abbrev}
+		{:else}
+			{job.city}
+		{/if}
+	</p>
 	<p>{job.salary}</p>
 	<p><a href={job.href}>Apply Now &raquo;</a></p>
 </div>
