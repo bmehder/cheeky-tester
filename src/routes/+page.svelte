@@ -6,9 +6,10 @@
 </script>
 
 <section class="section">
+	<h1>Jobs by Countries</h1>
 	{#each data.jobsByRegions || [] as region}
 		<div class="flow">
-			<h3>{region.country}</h3>
+			<h2>{region.country}</h2>
 			<div class="fixed-grid">
 				{#each region.entries as job}
 					<Job {job} />

@@ -3,7 +3,7 @@
 </script>
 
 <div>
-	<p>{job.title}</p>
+	<h3>{job.title}</h3>
 	<p>{job.city}, {job.country}</p>
 	<p>{job.salary}</p>
 	<p><a href={job.href}>Apply Now &raquo;</a></p>
