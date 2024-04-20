@@ -1,3 +1,4 @@
+/* Yutes */
 .flow > * + * {
 	margin-block-start: 1.5rem;
 }
@@ -8,7 +9,7 @@
 	padding-block: 3rem;
 }
 
-.columns {
+.fixed-grid {
 	display: grid;
 	gap: var(--gap, 1.5rem);
 
