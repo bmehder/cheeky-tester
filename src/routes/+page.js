@@ -12,7 +12,7 @@ export async function load({ fetch }) {
 
 	if (!response.ok) {
 		error(404, {
-			message: 'Response is not okay.',
+			message: response.statusText,
 		})
 	}
 
