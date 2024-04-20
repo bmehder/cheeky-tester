@@ -3,7 +3,7 @@ import { error } from '@sveltejs/kit'
 export const ssr = false
 
 export async function load({ fetch }) {
-	const route = 'https://cheekycms.com/wp-json/bsm/v1/jobs'
+	const route = 'https://cheekycms.com/wp-json/cheeky/v1/jobs'
 	// const params = '?arrange=regions&arrangeby=states'
 	const params = '?arrange=regions&arrangeby=countries'
 
