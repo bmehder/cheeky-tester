@@ -7,6 +7,9 @@
 			<li>
 				<a href="/locations">Locations</a>
 			</li>
+			<li>
+				<a href="/locations-by-country">Locations By Country</a>
+			</li>
 		</ul>
 	</nav>
 </header>
