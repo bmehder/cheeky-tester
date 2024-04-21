@@ -2,7 +2,10 @@
 	<nav>
 		<ul>
 			<li>
-				<a href="/">Jobs By Categories</a>
+				<a href="/">Home</a>
+			</li>
+			<li>
+				<a href="/jobs-by-country">Jobs By Country</a>
 			</li>
 			<li>
 				<a href="/locations">Locations</a>

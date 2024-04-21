@@ -1,18 +1,20 @@
 <script>
 	export let job
+
+	const { title, state_abbrev, city, salary, href } = job
 </script>
 
 <div>
-	<h3>{job.title}</h3>
+	<h3>{title}</h3>
 	<p>
-		{#if job.state_abbrev}
-			{job.city + ', ' + job.state_abbrev}
+		{#if state_abbrev}
+			{city + ', ' + state_abbrev}
 		{:else}
-			{job.city}
+			{city}
 		{/if}
 	</p>
-	<p>{job.salary}</p>
-	<p><a href={job.href}>Apply Now &raquo;</a></p>
+	<p>{salary}</p>
+	<p><a {href}>Apply Now &raquo;</a></p>
 </div>
 
 <style>
