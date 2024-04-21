@@ -2,8 +2,6 @@
 	import Location from '$lib/Location.svelte'
 
   export let data
-
-  console.log(data)
 </script>
 
 <section class="section">

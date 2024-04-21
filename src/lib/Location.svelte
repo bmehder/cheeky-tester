@@ -5,7 +5,7 @@
 <div class="flow">
 	<h3>{location.title.rendered}</h3>
 	<p>{location.acf.city}, {location.acf.state}</p>
-	<p>{location._embedded['wp:term'][0][0].name}</p>
+	<p>{location._embedded['wp:term'][2][0].name}</p>
 	<p>{@html location.excerpt.rendered}</p>
 	<p>{@html location.content.rendered}</p>
 </div>
