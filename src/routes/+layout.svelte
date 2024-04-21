@@ -1,8 +1,13 @@
 <script>
 	import '$lib/app.css'
 	import '@picocss/pico'
+	import Header from '$lib/Header.svelte'
 </script>
 
-<main class="container">
-	<slot />
-</main>
+<div class="container">
+	<Header />
+
+	<main>
+		<slot />
+	</main>
+</div>

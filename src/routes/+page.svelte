@@ -9,7 +9,7 @@
 	<h1>Jobs by Countries</h1>
 	{#each data.jobsByRegions || [] as region}
 		<div class="flow">
-			<h2>{region.country}</h2>
+			<h2>{region.name}</h2>
 			<div class="fixed-grid">
 				{#each region.entries as job}
 					<Job {job} />
