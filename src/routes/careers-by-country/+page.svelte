@@ -7,13 +7,13 @@
 <section class="section">
 	<h1>Careers By Country</h1>
 	{#each data.careersByZones as careers, idx}
-		<h2>{data.zones[idx].name}</h2>
-		<div class="fixed-grid">
-			{#each careers as career}
-				<Career {career} />
-			{:else}
-				<p>No results</p>
-			{/each}
-		</div>
+		{#if !!careers.length}
+			<h2>{data.zones[idx].name}</h2>
+			<div class="fixed-grid">
+				{#each careers as career}
+					<Career {career} />
+				{/each}
+			</div>
+		{/if}
 	{/each}
 </section>

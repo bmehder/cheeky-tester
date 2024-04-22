@@ -11,6 +11,5 @@ export async function load({ fetch, parent }) {
 
 	return {
 		careersByZones,
-		zones,
 	}
 }

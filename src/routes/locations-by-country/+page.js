@@ -10,6 +10,6 @@ export async function load({ fetch, parent }) {
 	)
 
 	return {
-		locationsByZones,
+		locationsByZones
 	}
 }
