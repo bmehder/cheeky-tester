@@ -1,5 +1,3 @@
-export const prerender = true
-
 export async function load({ fetch }) {
 	const route = 'https://cheekycms.com/wp-json/wp/v2/locations?_embed'
 
