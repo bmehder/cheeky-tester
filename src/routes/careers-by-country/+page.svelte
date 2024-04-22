@@ -1,8 +1,11 @@
 <script>
+	import SEO from '$lib/SEO.svelte';
 	import Career from '$lib/Career.svelte'
 
 	export let data
 </script>
+
+<SEO title="Careers by Country - CheekyCMS" />
 
 <section class="section">
 	<h1>Careers By Country</h1>

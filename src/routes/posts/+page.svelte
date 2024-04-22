@@ -4,7 +4,7 @@
   export let data
 </script>
 
-<SEO title="Blog Posts - Acme Website" description="These are the blog posts."/>
+<SEO title="Blog Posts - CheekyCMS" description="These are the blog posts."/>
 
 <section class="section">
   <h1>Posts</h1>

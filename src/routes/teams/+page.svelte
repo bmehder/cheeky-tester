@@ -1,8 +1,11 @@
 <script>
+	import SEO from '$lib/SEO.svelte'
 	import Member from '$lib/Member.svelte'
 
   export let data
 </script>
+
+<SEO title="Team - CheekyCMS" />
 
 <section class="section">
 	<h1>Team Members By Team</h1>

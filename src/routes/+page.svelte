@@ -1,8 +1,9 @@
 <script>
+	import SEO from '$lib/SEO.svelte';
 	export let data
-
-	console.log(data)
 </script>
+
+<SEO title="Home - CheekyCMS" />
 
 <section
 	class="section"
