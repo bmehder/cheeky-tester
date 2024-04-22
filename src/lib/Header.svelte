@@ -1,21 +1,15 @@
+<script>
+	import menuItems from '$lib/menuItems'
+</script>
+
 <header>
 	<nav>
 		<ul>
-			<li>
-				<a href="/">Home</a>
-			</li>
-			<li>
-				<a href="/jobs-by-country">Jobs By Country</a>
-			</li>
-			<li>
-				<a href="/locations">Locations</a>
-			</li>
-			<li>
-				<a href="/locations-by-country">Locations By Country</a>
-			</li>
-			<li>
-				<a href="/posts">Posts</a>
-			</li>
+			{#each menuItems as { name, url }}
+				<li>
+					<a href={url}>{name}</a>
+				</li>
+			{/each}
 		</ul>
 	</nav>
 </header>
