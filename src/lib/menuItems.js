@@ -4,4 +4,5 @@ export default [
 	{ name: 'Locations', url: '/locations' },
 	{ name: 'Locations by Country', url: '/locations-by-country' },
 	{ name: 'Posts', url: '/posts' },
+	{ name: 'Sitemap', url: '/sitemap.xml' },
 ]
