@@ -13,6 +13,9 @@
 			<li>
 				<a href="/locations-by-country">Locations By Country</a>
 			</li>
+			<li>
+				<a href="/posts">Posts</a>
+			</li>
 		</ul>
 	</nav>
 </header>
