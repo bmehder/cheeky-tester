@@ -4,7 +4,7 @@
 	const title = location.title.rendered
 	const city = location.acf.city
 	const state = location.acf.state
-	const country = location._embedded['wp:term'][2][0].name
+	const country = location._embedded['wp:term'][0][0].name
 	const excerpt = location.excerpt.rendered
 	const content = location.content.rendered
 </script>
