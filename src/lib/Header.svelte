@@ -6,7 +6,7 @@
 	<nav>
 		<ul>
 			{#each menuItems as { name, url }}
-				<li>
+				<li class="secondary">
 					<a href={url}>{name}</a>
 				</li>
 			{/each}
@@ -17,5 +17,6 @@
 <style>
 	header {
 		padding-block-start: 1.5rem;
+		text-align: center;
 	}
 </style>
