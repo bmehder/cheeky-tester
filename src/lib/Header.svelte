@@ -19,4 +19,8 @@
 		padding-block-start: 1.5rem;
 		text-align: center;
 	}
+
+	ul {
+		flex-wrap: wrap;
+	}
 </style>

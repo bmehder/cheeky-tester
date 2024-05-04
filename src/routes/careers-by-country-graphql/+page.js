@@ -1,3 +1,5 @@
+import { graphqlRoute, setFetchOptions } from '$lib/utils.js'
+
 export async function load({ fetch }) {
 	const query = {
 		query: `{
@@ -23,19 +25,17 @@ export async function load({ fetch }) {
 		}`,
 	}
 
-	const fetchOptions = {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json',
-		},
-		body: JSON.stringify(query),
-	}
+	const options = setFetchOptions(query)
 
-	const response = await fetch('https://cheekycms.com/graphql', fetchOptions)
+	const response = await fetch(graphqlRoute, options)
+
+	// Callbacks
+	const isZoneHasCareers = node => node.careers.nodes.length > 0
+	const sortByName = (a, z) => (a.name > z.name ? 1 : -1)
 
 	const careersByZones = (await response.json()).data.zones.nodes
-		.filter(x => x.careers.nodes.length)
-		.sort((a, z) => (a.name > z.name ? 1 : -1))
+		.filter(isZoneHasCareers)
+		.sort(sortByName)
 
 	return {
 		careersByZones,

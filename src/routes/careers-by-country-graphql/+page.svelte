@@ -3,8 +3,6 @@
 	import Career2 from '$lib/Career2.svelte'
 
 	export let data
-
-	// console.log(data.careersByZones);
 </script>
 
 <SEO title="Careers by Country (GraphQL) - CheekyCMS" />
