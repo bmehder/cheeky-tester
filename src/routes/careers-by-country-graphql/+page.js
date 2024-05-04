@@ -31,10 +31,13 @@ export async function load({ fetch }) {
 		body: JSON.stringify(query),
 	}
 
-	const careersByZones = await fetch('https://cheekycms.com/graphql', fetchOptions)
-		.then(x => x.json())
+	const response = await fetch('https://cheekycms.com/graphql', fetchOptions)
+
+	const careersByZones = (await response.json()).data.zones.nodes
+		.filter(x => x.careers.nodes.length)
+		.sort((a, z) => (a.name > z.name ? 1 : -1))
 
 	return {
-		careersByZones: careersByZones.data.zones.nodes.filter(x => x.careers.nodes.length),
+		careersByZones,
 	}
 }
