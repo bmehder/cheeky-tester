@@ -1,16 +1,18 @@
 <script>
 	import SEO from '$lib/SEO.svelte';
+
 	export let data
+
+	console.log(data)
 </script>
 
 <SEO title="Home - CheekyCMS" />
 
 <section
 	class="section"
-	style="background-image: url('{data.homePageTitle[0]._embedded['wp:featuredmedia'][0]
-		.source_url}')"
+	style="background-image: url('{data.homePageTitle.featuredImage.node.sourceUrl}')"
 >
-	<div>{@html data.homePageTitle[0].content.rendered}</div>
+	<div>{@html data.homePageTitle.content}</div>
 </section>
 
 <style>

@@ -1,5 +1,5 @@
 export default [
-	{ name: 'Home', url: '/' },
+	{ name: 'Stuff (GraphQL)', url: '/' },
 	// { name: 'Jobs by Country (_bd_)', url: '/jobs-by-country' },
 	// { name: 'Careers by Country (REST)', url: '/careers-by-country' },
 	{ name: 'Careers by Country (GraphQL)', url: '/careers-by-country-graphql' },
