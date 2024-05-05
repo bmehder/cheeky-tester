@@ -3,6 +3,8 @@
 	import Location2 from '$lib/Location2.svelte'
 
 	export let data
+
+	console.log(data.locationsByZones);
 </script>
 
 <SEO title="Locations by Country (GraphQL) - CheekyCMS" />
