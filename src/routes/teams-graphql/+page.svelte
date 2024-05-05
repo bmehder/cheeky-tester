@@ -18,11 +18,3 @@
 		</div>
 	{/each}
 </section>
-
-<style>
-	.auto-fill {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-		gap: 3rem;
-	}
-</style>

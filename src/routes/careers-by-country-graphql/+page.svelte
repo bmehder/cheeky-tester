@@ -11,7 +11,7 @@
 	<h1>Careers By Country (GraphQL)</h1>
 	{#each data.careersByZones as {careers, name}}
 		<h2>{name}</h2>
-		<div class="fixed-grid">
+		<div class="auto-fill">
 			{#each careers.nodes as career}
 				<Career2 {career} />
 			{/each}

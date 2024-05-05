@@ -12,7 +12,7 @@
 	{#each data.jobsByRegions || [] as region}
 		<div class="flow">
 			<h2>{region.name}</h2>
-			<div class="fixed-grid">
+			<div class="auto-fill">
 				{#each region.entries as job}
 					<Job {job} />
 				{/each}

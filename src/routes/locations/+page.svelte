@@ -9,7 +9,7 @@
 
 <section class="section">
   <h1>Locations</h1>
-  <div class="fixed-grid">
+  <div class="auto-fill">
     {#each data.locations as location}
       <Location {location} />
     {/each}

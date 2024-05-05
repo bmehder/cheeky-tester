@@ -12,7 +12,7 @@
 	{#each data.careersByZones as careers, idx}
 		{#if !!careers.length}
 			<h2>{data.zones[idx].name}</h2>
-			<div class="fixed-grid">
+			<div class="auto-fill">
 				{#each careers as career}
 					<Career {career} />
 				{/each}

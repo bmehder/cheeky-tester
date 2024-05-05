@@ -32,3 +32,9 @@ img {
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
+
+.auto-fill {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+	gap: 3rem;
+}

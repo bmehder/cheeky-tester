@@ -12,7 +12,7 @@
 	{#each data.locationsByZones as locations, idx}
 		{#if locations.length}
 			<h2>{data.zones[idx].name}</h2>
-			<div class="fixed-grid">
+			<div class="auto-fill">
 				{#each locations as location}
 					<Location {location} />
 				{/each}

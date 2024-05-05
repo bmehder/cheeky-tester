@@ -13,7 +13,7 @@
 	<h1>Locations By Country (GraphQL)</h1>
 	{#each data.locationsByZones as {locations, name}}
 		<h2>{name}</h2>
-		<div class="fixed-grid">
+		<div class="auto-fill">
 			{#each locations.nodes as location}
 				<Location2 {location} />
 			{/each}

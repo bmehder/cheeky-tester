@@ -9,17 +9,17 @@
 
 <section class="section">
   <h1>Posts</h1>
-  <ul>
+  <div class="auto-fill">
     {#each data.posts as post}
       <PostCard {post} />
     {/each}
-  </ul>
+  </div>
 </section>
 
-<style>
+<!-- <style>
   ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
     gap: 3rem;
   }
-</style>
+</style> -->
